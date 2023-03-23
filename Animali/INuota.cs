@@ -8,6 +8,6 @@ namespace csharp_abstract_animals.Animali
 {
     internal interface INuota
     {
-        public void Nuota() => Console.WriteLine("Sto nuotando!!");
+        public void Nuota();
     }
 }

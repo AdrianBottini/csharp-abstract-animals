@@ -9,3 +9,16 @@ cane.Mangia();
 passerotto.Dormi();
 aquila.Verso();
 delfino.Verso();
+
+FaiNuotare(delfino);
+FaiVolare(aquila);
+
+void FaiVolare(IVola animale)
+{
+    animale.Vola();
+}
+
+void FaiNuotare(INuota animale)
+{
+    animale.Nuota();
+}

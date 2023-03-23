@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals.Animali
 {
-    internal interface IVola
+    public interface IVola
     {
-        public void Vola() => Console.WriteLine("Sto volando!!");
+        public void Vola();
     }
 }
