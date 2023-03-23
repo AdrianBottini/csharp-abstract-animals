@@ -7,10 +7,7 @@ using System.Threading.Tasks;
 namespace csharp_abstract_animals.Animali
 {
     public class Delfino : Animale, INuota
-    {
-        static string verso = "IIIIIII IIIIIII";
-        static string cosaMangia = "Pesce";
-        public override void Verso()
+    {  public override void Verso()
         {
             Console.WriteLine(GetVerso());
         }
@@ -20,11 +17,11 @@ namespace csharp_abstract_animals.Animali
         }
         public override string GetCosaMangia()
         {
-            return cosaMangia;
+            return "Pesce";
         }
         public override string GetVerso()
         {
-            return verso;
+            return "IHIHIHIH";
         }
         public void Nuota() => Console.WriteLine("Sto nuotando!!");
     }

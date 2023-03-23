@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals.Animali
 {
-    internal class PulcinellaDiMare : Animale, INuota, IVola
-    {
-        static string verso = "PULCINELLA PULCINELLA";
-        static string cosaMangia = "Carne";
-        public override void Verso()
-        {
-            Console.WriteLine(GetVerso());
+    public class PulcinellaDiMare : Animale, INuota, IVola
+    {  public override void Verso()
+        { Console.WriteLine(GetVerso());
         }
         public override void Mangia()
         {
@@ -20,13 +16,13 @@ namespace csharp_abstract_animals.Animali
         }
         public override string GetCosaMangia()
         {
-            return cosaMangia;
+            return "Carne";
         }
         public override string GetVerso()
         {
-            return verso;
+            return "PULCINELLA PULCINELLA";
         }
-        public void Vola() => Console.WriteLine("Sto volando!!" + verso);
-        public void Nuota() => Console.WriteLine("Sto nuotando!!" + verso);
+        public void Vola() => Console.WriteLine("Sto volando!!");
+        public void Nuota() => Console.WriteLine("Sto nuotando!!");
     }
 }

@@ -7,12 +7,8 @@ using System.Threading.Tasks;
 namespace csharp_abstract_animals.Animali
 {
     public class Aquila : Animale, IVola 
-    {
-        static string verso = "QUII QUII";
-        static string cosaMangia = "Carne";
-        public override void Verso()
-        {
-            Console.WriteLine(GetVerso());
+    { public override void Verso()
+        {  Console.WriteLine(GetVerso());
         }
         public override void Mangia()
         {
@@ -20,12 +16,12 @@ namespace csharp_abstract_animals.Animali
         }
         public override string GetCosaMangia()
         {
-            return cosaMangia;
+            return "Carne";
         }
         public override string GetVerso()
         {
-            return verso;
+            return "UII UII";
         }
-        public void Vola() => Console.WriteLine("Sto volando!!" + verso);
+        public void Vola() => Console.WriteLine("Sto volando!!");
     }
 }

@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals.Animali
 {
-    internal class Passerotto : Animale, IVola
-    {
-        static string verso = "CIIIP CIIIIP";
-        static string cosaMangia = "Insetti";
-        public override void Verso()
+   public class Passerotto : Animale, IVola
+    {         public override void Verso()
         {
             Console.WriteLine(GetVerso());
         }
@@ -20,12 +17,12 @@ namespace csharp_abstract_animals.Animali
         }
         public override string GetCosaMangia()
         {
-            return cosaMangia;
+            return "Insetti";
         }
         public override string GetVerso()
         {
-            return verso;
+            return "CIP CIP";
         }
-        public void Vola() => Console.WriteLine("Sto volando!!" + verso);
+        public void Vola() => Console.WriteLine("Sto volando!!");
     }
 }
