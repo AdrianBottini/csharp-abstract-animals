@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals.Animali
 {
-    public class Aquila : Animale, IVola 
+    internal class PulcinellaDiMare : Animale, INuota, IVola
     {
-        static string verso = "QUII QUII";
+        static string verso = "PULCINELLA PULCINELLA";
         static string cosaMangia = "Carne";
         public override void Verso()
         {
@@ -27,5 +27,6 @@ namespace csharp_abstract_animals.Animali
             return verso;
         }
         public void Vola() => Console.WriteLine("Sto volando!!" + verso);
+        public void Nuota() => Console.WriteLine("Sto nuotando!!" + verso);
     }
 }

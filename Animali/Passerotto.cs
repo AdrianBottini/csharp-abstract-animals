@@ -10,7 +10,22 @@ namespace csharp_abstract_animals.Animali
     {
         static string verso = "CIIIP CIIIIP";
         static string cosaMangia = "Insetti";
-        public Passerotto() : base(verso, cosaMangia) { }
-        public void Vola() => Console.WriteLine("Sto volando!!");
+        public override void Verso()
+        {
+            Console.WriteLine(GetVerso());
+        }
+        public override void Mangia()
+        {
+            Console.WriteLine(GetCosaMangia());
+        }
+        public override string GetCosaMangia()
+        {
+            return cosaMangia;
+        }
+        public override string GetVerso()
+        {
+            return verso;
+        }
+        public void Vola() => Console.WriteLine("Sto volando!!" + verso);
     }
 }
